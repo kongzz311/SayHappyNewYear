@@ -37,6 +37,7 @@ app.post('/s', function(req, res) {
     }
   };
   console.log(user);
+  res.end();
 });
 
 

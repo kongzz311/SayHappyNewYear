@@ -7,20 +7,16 @@
 </script>
 <script>
 $(document).ready(function(){
-	$("button").click(function(){
+
 		$.post("\s",{
 			width: screen.width, height: screen.height
-		},
-		function(data,status){
-			alert("数据: \n" + data + "\n状态: " + status);
 		});
-	});
 });
 </script>
 </head>
 <body>
 
-<button>发送一个 HTTP POST 请求页面并获取返回内容</button>
+<p>新年快乐</p>
 
 </body>
 </html>

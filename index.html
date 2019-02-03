@@ -8,6 +8,18 @@
 	</script>
 
 	<script>
+		var bgmusic = document.getElementById('bgmusic');
+bgmusic.addEventListener('canplay', function(){
+	this.play();
+}, false);
+window.addEventListener('load', function(){
+	window.addEventListener('touchstart', once, false);
+}, false);
+function once(){
+	bgmusic.play();
+	window.removeEventListener('touchstart', once, false);
+}
+
 		$(document).ready(function() {
 
 			$.post("\s", {
@@ -18,7 +30,7 @@
 	</script>
 
 	<script>
-var _hmt = _hmt || [];
+		var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?fdbd8eff777f28dd8c123be6403669a5";
@@ -56,12 +68,6 @@ var _hmt = _hmt || [];
 </head>
 
 <body>
-
-	<!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-		<h1 class="display-4">新年快乐</h1>
-		<h1 class="lead">佩奇年快乐～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-	</div> -->
-
 	<main role="main" class="container">
 
 		<div class="starter-template">
@@ -69,121 +75,134 @@ var _hmt = _hmt || [];
 			<h1 class="lead">来自孔</p>
 		</div>
 	</main>
+	<br>
+	<br>
+	<h1 class="lead">有背景音乐⬇️——较传统的</p>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=396696&auto=1&height=66"></iframe>
+	<h1 class="lead">⬇️较推荐的</p>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=4946875&auto=1&height=66"></iframe>
+
+
+	<!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h1 class="display-4">新年快乐</h1>
+		<h1 class="lead">佩奇年快乐～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+	</div> -->
+
+
 
 
 	<div class="container">
-		<h1 class="lead"> ->图片加载有点卡<- </p>
-		<h1 class="lead">去年已经过去～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1ouks12g30dw0af4m8.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">祝您佩奇年快乐～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1qkhbwqg30dc07ik9o.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzj1rl78u9g30dw0937d2.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">心想事成～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1u8550qg308q04z18a.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">不缺钱～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1udqjp4g30b20danci.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">甚至有很多钱～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1v9ka0jg308404kb1b.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">每天都很开心～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1va3x2jg306t06tqv5.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">容颜永驻～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1vagbgwg30b4067awv.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1wj1zprg306t06twop.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">每天都有超多智慧迸发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1wipwydg306t069npd.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
+		<h1 class="lead"> ->图片加载有点卡<- </p> <h1 class="lead">去年已经过去～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+				<div class="row justify-content-center">
+					<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1ouks12g30dw0af4m8.gif" class="img-fluid" alt="Responsive image">
+				</div>
+				<br>
+				<br>
+				<h1 class="lead">祝您佩奇年快乐～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+					<div class="row justify-content-center">
+						<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1qkhbwqg30dc07ik9o.gif" class="img-fluid" alt="Responsive image">
+					</div>
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzj1rl78u9g30dw0937d2.gif" class="img-fluid" alt="Responsive image">
+					</div>
+					<br>
+					<br>
+					<h1 class="lead">心想事成～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+						<div class="row justify-content-center">
+							<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1u8550qg308q04z18a.gif" class="img-fluid" alt="Responsive image">
+						</div>
+						<br>
+						<br>
+						<h1 class="lead">不缺钱～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+							<div class="row justify-content-center">
+								<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1udqjp4g30b20danci.gif" class="img-fluid" alt="Responsive image">
+							</div>
+							<br>
+							<br>
+							<h1 class="lead">甚至有很多钱～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+								<div class="row justify-content-center">
+									<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1v9ka0jg308404kb1b.gif" class="img-fluid" alt="Responsive image">
+								</div>
+								<br>
+								<br>
+								<h1 class="lead">每天都很开心～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+									<div class="row justify-content-center">
+										<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1va3x2jg306t06tqv5.gif" class="img-fluid" alt="Responsive image">
+									</div>
+									<br>
+									<br>
+									<h1 class="lead">容颜永驻～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+										<div class="row justify-content-center">
+											<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1vagbgwg30b4067awv.gif" class="img-fluid" alt="Responsive image">
+										</div>
+										<br>
+										<br>
+										<div class="row justify-content-center">
+											<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1wj1zprg306t06twop.gif" class="img-fluid" alt="Responsive image">
+										</div>
+										<br>
+										<br>
+										<h1 class="lead">每天都有超多智慧迸发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+											<div class="row justify-content-center">
+												<img src="https://ws1.sinaimg.cn/large/006tNc79gy1fzj1wipwydg306t069npd.gif" class="img-fluid" alt="Responsive image">
+											</div>
+											<br>
+											<br>
 
-		<div class="row justify-content-center">
-			<img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzj1wgp91sg30dc07te0c.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">同时还有超多头发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1xolvsqg309o0797wh.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">没错，是超多头发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1xnsugrg30dc0d51ky.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1xo4c70g308w071dnh.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">考试不用愁～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1z2jiysg309j071u0x.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1z14au8g30dc0dc7wl.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<h1 class="lead">走上人生巅峰～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
-		<div class="row justify-content-center">
-			<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1zh5fgbg30jk0eo7wj.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1zgmy7jg30du0ac447.gif" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
+											<div class="row justify-content-center">
+												<img src="https://ws3.sinaimg.cn/large/006tNc79gy1fzj1wgp91sg30dc07te0c.gif" class="img-fluid" alt="Responsive image">
+											</div>
+											<br>
+											<br>
+											<h1 class="lead">同时还有超多头发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+												<div class="row justify-content-center">
+													<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1xolvsqg309o0797wh.gif" class="img-fluid" alt="Responsive image">
+												</div>
+												<br>
+												<br>
+												<h1 class="lead">没错，是超多头发～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+													<div class="row justify-content-center">
+														<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1xnsugrg30dc0d51ky.gif" class="img-fluid" alt="Responsive image">
+													</div>
+													<br>
+													<br>
+													<div class="row justify-content-center">
+														<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1xo4c70g308w071dnh.gif" class="img-fluid" alt="Responsive image">
+													</div>
+													<br>
+													<br>
+													<h1 class="lead">考试不用愁～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+														<div class="row justify-content-center">
+															<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1z2jiysg309j071u0x.gif" class="img-fluid" alt="Responsive image">
+														</div>
+														<br>
+														<br>
+														<div class="row justify-content-center">
+															<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1z14au8g30dc0dc7wl.gif" class="img-fluid" alt="Responsive image">
+														</div>
+														<br>
+														<br>
+														<h1 class="lead">走上人生巅峰～(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+															<div class="row justify-content-center">
+																<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fzj1zh5fgbg30jk0eo7wj.gif" class="img-fluid" alt="Responsive image">
+															</div>
+															<br>
+															<br>
+															<div class="row justify-content-center">
+																<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fzj1zgmy7jg30du0ac447.gif" class="img-fluid" alt="Responsive image">
+															</div>
+															<br>
+															<br>
 
-		<h1 class="lead">最后是qq⬇️(⁎⁍̴̛ᴗ⁍̴̛⁎) 祝您🐷年快乐</p>
-		<h1 class="lead">乐于提供摄影前期后期、计算机硬件、软件、数据分析、机器学习算法、启发式算法等咨询和解决方案</p>
-		<div class="row justify-content-center">
-			<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fztkau247pj30u01hch4q.jpg" class="img-fluid" alt="Responsive image">
-		</div>
-		<br>
-		<br>
+															<h1 class="lead">最后是qq⬇️(⁎⁍̴̛ᴗ⁍̴̛⁎) 祝您🐷年快乐</p>
+																<h1 class="lead">乐于提供摄影前期后期、计算机硬件、软件、数据分析、机器学习算法、启发式算法等咨询和解决方案</p>
+																	<div class="row justify-content-center">
+																		<img src="https://ws4.sinaimg.cn/large/006tNc79gy1fztkau247pj30u01hch4q.jpg" class="img-fluid" alt="Responsive image">
+																	</div>
+																	<br>
+																	<br>
 	</div>
 </body>
 
